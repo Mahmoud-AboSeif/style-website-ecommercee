@@ -7,6 +7,8 @@
     --blue-button: #1976d2;
     --blue: #9fc5ef;
     --icons: #40464d;
+    --footer-bg: #212529;
+    --white:#fff;
 }
 
 /* ================
@@ -35,6 +37,7 @@
 body {
     font-family: '-apple-system', 'Segoe UI', 'Roboto', 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    background-color: #f8f4f4d7;
 }
 
 /* ================
@@ -59,17 +62,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(105, 104, 104);
 }
-
+main{
+    width: 86%;
+    margin: auto;
+}
+@media (max-width: 669px)
+{
+    main{
+        width: 96%;
+    }
+}
 /* for Firefox */
 html {
     scrollbar-color: #9e4673 #3d4a59;
 }
 
 /* ================
- End Scrollbar
+End Scrollbar
 =======================================*/
 /* ================
- Start style Html elements a , button
+Start style Html elements a , button
 =======================================*/
 a,
 button {
@@ -93,7 +105,7 @@ li {
 }
 
 /* ===================================
- End style Html elements a , button
+End style Html elements a , button
 ======================================*/
 
 /* ===========================

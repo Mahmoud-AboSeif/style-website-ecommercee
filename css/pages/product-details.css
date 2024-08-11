@@ -1,0 +1,25 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+}
+
+header.flex{
+    background-color: var(--footer-bg);
+    color: var(--white);
+    padding-block: .7rem;
+    
+}
+header.flex  .fa-solid {
+    color: var(--white);
+}
+header.flex .sign-in:hover,
+header.flex .register:hover,
+header.flex .cart:hover{
+    border: 1px solid var(--white);
+    transform: scale(1.05);
+}
+header.flex .logo:hover{
+    transform: scale(1.04);
+}

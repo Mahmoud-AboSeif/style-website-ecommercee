@@ -93,13 +93,17 @@
     }
 }
 
-main {
-    background-color: rgba(241, 234, 234, 0.884);
-}
+
 
 main>h1 {
-    padding-top: 10px;
-    margin-left: 30px;
+    margin: 2.3rem 0 2%;
+}
+@media (max-width: 576px)
+{
+    main>h1 {
+        margin: 2.3rem 0 5px;
+        font-size: 1.6rem;
+    }
 }
 
 main .product {
@@ -114,7 +118,19 @@ main .product .card-content {
 
     width: 270px;
 }
-
+/* This media belongs to h1 , card content */
+@media (max-width: 350px)
+{
+    main>h1 {
+        font-size: 1.3rem;
+    }
+    .card img{
+        max-width: 200px;
+    }
+    main .product .card-content {
+        width: 200px;
+    }
+}
 .product article.card {
     transition: all .2s ease;
     border-radius: 5px;

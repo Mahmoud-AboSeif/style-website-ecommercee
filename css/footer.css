@@ -1,0 +1,48 @@
+footer{
+    
+    background-color: var(--footer-bg);
+    padding-block: 1rem;
+    margin-top: 3rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+footer > p{
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+}
+footer > p span{
+    text-transform: capitalize;
+    color: #ff7790;
+    font-size: 19px;
+    font-weight: 600;
+    
+}
+@media ( max-width: 655px){
+    footer > p{
+        font-size: 15px;
+    }
+    footer > p span{
+        font-size: 17px;
+        font-weight: 500;
+        
+    }
+}
+@media ( max-width: 520px){
+    footer > p{
+        font-size: 12px;
+    }
+    footer > p span{
+        font-size: 13px;
+        
+    }
+}
+@media ( max-width: 350px){
+    footer > p{
+        font-size: 10px;
+    }
+    footer > p span{
+        font-size: 12px;
+        
+    }
+}
