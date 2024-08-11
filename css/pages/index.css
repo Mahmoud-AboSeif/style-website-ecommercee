@@ -1,0 +1,184 @@
+.top-img {
+    height: 100vh;
+    background: url(../../images/bac.jpg) no-repeat center top/cover fixed;
+    position: relative;
+}
+
+@media (max-width: 620px) {
+    .top-img {
+        background-position: left;
+    }
+}
+
+.content {
+    font-size: 2rem;
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+.content .lifestyle {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.content .sale span {
+    color: rgb(233, 13, 13);
+    font-weight: 700;
+    margin-left: .5rem;
+}
+
+.content .men,
+.content .sale {
+    font-weight: bold;
+    margin-block: .4rem;
+}
+
+.content .free-shopping {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #434b55;
+}
+
+.content .free-shopping span {
+    color: rgb(177, 73, 73);
+    font-weight: 500;
+    margin-left: .2rem;
+}
+
+.content button {
+    font-size: .9rem;
+    margin-top: .9rem;
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1.6rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.content button:hover {
+    background-color: rgba(0, 0, 0, 0.945);
+    color: var(--blue);
+}
+
+@media (max-width: 480px) {
+    .content .lifestyle {
+        font-size: 1.4rem;
+    }
+
+    .content .men,
+    .content .sale {
+        font-weight: 600;
+    }
+
+    .content .sale span {
+        font-weight: 600;
+        margin-left: .1rem;
+    }
+
+    .content .free-shopping {
+        font-size: 1.4rem;
+    }
+
+    .content .free-shopping span {
+        font-weight: 400;
+        margin-left: .1rem;
+    }
+}
+
+@media (max-width: 230px) {
+    .content {
+        margin-top: 7rem;
+    }
+}
+
+main {
+    background-color: rgba(241, 234, 234, 0.884);
+}
+
+main>h1 {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+main .product {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 1.5rem;
+}
+
+main .product .card-content {
+
+    width: 270px;
+}
+
+.product article.card {
+    transition: all .2s ease;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.product article.card:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    border-bottom: 2px solid rgba(231, 225, 225, 0.87);
+    border-radius: 5px 5px 0 0;
+}
+
+.card .card-content .title {
+    padding-top: .7rem;
+    text-transform: capitalize;
+    padding-inline: .4rem;
+}
+
+.card .card-content .description {
+    font-size: .84rem;
+    margin-top: .4rem;
+    text-transform: capitalize;
+    padding-inline: .4rem;
+    margin-bottom: .6rem;
+    line-height: 1.1rem;
+}
+
+.card .card-content .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .9rem .88rem;
+}
+
+.card .card-content .price p {
+    color: #ff0000;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.card .card-content .price button {
+    font-size: .9rem;
+    text-transform: capitalize;
+    background-color: var(--blue-button);
+    color: #fff;
+    padding: 6px 8px;
+    font-size: .7rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.card .card-content .price button:hover {
+    background-color: rgba(0, 0, 0, 0.945);
+    color: var(--blue);
+}
+
+.card .price button .fa-solid {
+    color: rgb(221, 215, 215);
+    margin-right: 0.10rem;
+}
+
+.card .price button .fa-solid:hover {
+    color: var(--blue);
+}

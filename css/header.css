@@ -1,0 +1,81 @@
+header.flex {
+    justify-content: space-between;
+    padding: 1.2rem 10% 0 10%;
+}
+
+header.flex .links .fa-solid {
+    margin-right: .3rem;
+}
+
+header.flex .sign-in {
+    margin-inline: 1rem;
+}
+
+header.flex .sign-in,
+header.flex .register {
+    border: 1px solid var(--bodyFont);
+    padding: 0.44rem 1rem;
+    border-radius: 55px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+header.flex .sign-in:hover,
+header.flex .register:hover,
+header.flex .sign-in:hover .fa-solid,
+header.flex .register:hover .fa-solid,
+header.flex .cart {
+    background-color: var(--bodyFont);
+    color: var(--blue);
+}
+
+header.flex .cart {
+    position: relative;
+    font-size: .9rem;
+    padding: .44rem 1.1rem .44rem .6rem;
+    border-radius: 55px;
+}
+
+header.flex .cart .fa-solid {
+    color: var(--blue);
+}
+
+header.flex .cart .product-number {
+    position: absolute;
+    background-color: rgb(216, 43, 43);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: .7rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: -7px;
+
+
+}
+
+header.flex p {
+    letter-spacing: 5px;
+}
+
+@media (max-width: 620px) {
+    .logo {
+        display: none;
+    }
+
+    header.flex {
+        justify-content: center;
+        padding: 1.2rem 0 0;
+
+    }
+
+    header.flex .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: .9rem;
+    }
+}
