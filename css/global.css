@@ -5,6 +5,7 @@
     --bodyBG: #f6f6f6;
     --bodyFont: #2b3445;
     --blue-button: #1976d2;
+    --red-button: #e41d43;
     --blue: #9fc5ef;
     --icons: #40464d;
     --footer-bg: #212529;
@@ -99,7 +100,11 @@ button:hover,
 a:hover {
     cursor: pointer;
 }
-
+button:disabled{
+    opacity: .6;
+    cursor: not-allowed;
+    scale: none;
+}
 li {
     list-style: none;
 }

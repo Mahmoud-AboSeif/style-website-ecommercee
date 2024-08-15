@@ -1,5 +1,6 @@
 body{
     height: 100vh;
+    background-color: rgb(250, 248, 241);
     display: grid;
     grid-template-rows: auto 1fr auto;
     align-items: center;
@@ -23,3 +24,121 @@ header.flex .cart:hover{
 header.flex .logo:hover{
     transform: scale(1.04);
 }
+main{
+    width: 65%;
+}
+@media (max-width: 576px){
+    main{
+        width: 100%;
+    }
+    .cart-products .card h3{
+        font-size: 1rem;
+    }
+}
+.cart-products .card{
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-top: 2px solid var(--blue);
+    border-radius: 4px;
+    margin-top: 1.8rem;
+    max-width: 450px;
+    margin-inline: auto;
+    font-weight: 500;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+
+}
+.cart-products .card img{
+    width: 77px;
+    height: 77px;
+    border-radius: 0.22rem;
+}
+.cart-products .card .decreases{
+    color: var(--blue-button);
+    font-size: 1.9rem;
+}
+.cart-products .card .increases{
+    color: var(--blue-button);
+    font-size: 1.4rem;
+    
+}
+.cart-products .card .Num {
+    width: 3.8rem;
+    justify-content: space-between;
+}
+.cart-products .card .Num .quantity{
+    background-color: var(--blue-button);
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    justify-content: center;
+    color: var(--white);
+}
+.cart-products .card .basket .fa-solid{
+    color: var(--red-button);
+    margin-right: .6rem;
+}
+main button.clear{
+    background-color: var(--red-button);
+    padding: .3rem .6rem ;
+    margin-top: 1.2rem;
+    border-radius: 6px;
+    color: var(--white);
+    font-size: .9rem;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+main button.clear .fa-solid{
+    color: var(--white);
+    margin-right: .4rem;
+}
+main button.clear:hover{
+    background-color: var(--white);
+    border-radius: 4px;
+    color: var(--red-button);
+    transform: scale(1.01);
+}
+main button.clear:hover .fa-solid{
+    color: var(--red-button);
+}
+section.summary{
+    background-color: var(--white);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    width: 233px;
+    margin-inline: auto;
+    margin-top: 2.5rem;
+    border-radius: px;
+}
+section.summary h1{
+    font-size: 1.2rem;
+    padding-block: .5rem;
+    border-bottom: 2px solid rgb(0, 0,0, 0.12);
+}
+section.summary div.flex{
+    justify-content: space-between;
+    padding-inline: .5rem;
+    padding-block: .6rem;
+}
+section.summary div.flex .subtotal{
+    color: var(--red-button);
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+section.summary button.checkout{
+    width: 100%;
+    background-color: var(--blue-button);
+    color: var(--white);
+    padding-block: .6rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: .9rem;
+    font-weight: 500;
+}
+section.summary a{
+    padding-block: .5rem;
+    color: var(--red-button);
+    font-size: .9rem;
+}
+
+
+
