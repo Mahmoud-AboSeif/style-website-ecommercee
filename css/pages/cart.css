@@ -100,6 +100,7 @@ main button.clear:hover{
 }
 main button.clear:hover .fa-solid{
     color: var(--red-button);
+    
 }
 section.summary{
     background-color: var(--white);

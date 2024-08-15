@@ -175,12 +175,12 @@ main .product .card-content {
 }
 
 .card .card-content .price button {
-    font-size: .9rem;
+    font-size: .8rem;
     text-transform: capitalize;
     background-color: var(--blue-button);
     color: #fff;
     padding: 6px 8px;
-    font-size: .7rem;
+    
     border-radius: 4px;
     transition: all 0.2s ease;
 }

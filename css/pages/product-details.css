@@ -3,6 +3,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     align-items: center;
+    background-color: rgb(241, 240, 235);
 }
 
 header.flex{
@@ -22,4 +23,48 @@ header.flex .cart:hover{
 }
 header.flex .logo:hover{
     transform: scale(1.04);
+}
+main article.product-details{
+    margin-inline: auto;
+    max-width: 800px;
+    
+}
+main article.product-details img{
+    width: 40%;
+}
+main .card-content{
+    margin-inline:  1.1rem;
+}
+main .card-content .description{
+    margin-block: 1.2rem;
+    line-height: 1.44rem;
+    font-size: .96rem;
+}
+main .card-content .title .price{
+    font-size: 1.22rem;
+    font-weight: bold;
+    color: var(--red-button);
+}
+article.product-details .card-content .title{
+    justify-content: space-between; 
+}
+main .card-content button.add-to-cart {
+    text-transform: capitalize;
+    background-color: var(--blue-button);
+    color: var(--white);
+    padding: 6px 8px;
+    font-size: .9rem;
+    border-radius: 4px;
+    gap: .33rem;
+    transition: all 0.2s ease;
+}
+main .card-content button.add-to-cart:hover {
+    background-color: rgba(0, 0, 0, 0.945);
+    color: var(--blue);
+}
+main .card-content button.add-to-cart:hover .fa-solid{
+    color: var(--blue);
+}
+main .card-content button.add-to-cart .fa-solid{
+    color: var(--white);
 }
