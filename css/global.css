@@ -16,7 +16,7 @@
     My Classes
 ===================*/
 .border {
-    border: 3px solid red;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .flex {

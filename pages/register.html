@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="../css/pages/register.css"> 
     
 
-    <title>Sign in</title>
+    <title>Register</title>
 </head>
     <body class="text-center text-white bg-dark">
         <header class="flex">
@@ -42,16 +42,20 @@
                     $0.00
                     <span class="product-number">2</span>
                 </a>
-                <a class="sign-in border" href="#">
+                <a class="sign-in" href="../pages/sign-in.html">
                     <i class="fa-solid fa-right-to-bracket"></i>
                     sign-in</a>
-                <a class="register" href="../pages/register.html">
+                <a class="register border" href="#">
                     <i class="fa-solid fa-user-plus"></i>
                     register</a>
             </div>
         </header>
         <main style="max-width: 42em;" class="px-3">
             <form>
+                <div class="mb-4">
+                <label for="username" class="form-label">Username</label>
+                <input type="email" class="form-control" id="username" aria-describedby="emailHelp">
+                </div>
                 <div class="mb-4">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -64,7 +68,7 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-                <button type="submit" class="btn btn-primary">sign in</button>
+                <button type="submit" class="btn btn-primary">Create Account</button>
             </form>
         </main>
         <footer>

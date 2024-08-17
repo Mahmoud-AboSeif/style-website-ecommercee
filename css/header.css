@@ -80,3 +80,26 @@ header.flex p {
         gap: .9rem;
     }
 }
+
+/* ====================================
+    when scroll down an the home page
+=======================================*/
+
+header.scroll-down{
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding-bottom: 0.5rem;
+    background-color: var(--footer-bg);
+    color: var(--white);
+    z-index: 99;
+    
+}
+.scroll-down .fa-bag-shopping,
+.scroll-down .fa-right-to-bracket,
+.scroll-down .fa-user-plus{
+    color: var(--white);
+}
+.scroll-down .logo .fa-bag-shopping{
+    font-size: 1.70rem;
+}

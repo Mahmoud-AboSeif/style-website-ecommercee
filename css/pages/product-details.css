@@ -3,7 +3,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     align-items: center;
-    background-color: rgb(241, 240, 235);
+    background-color: rgb(248, 246, 244);
 }
 
 header.flex{
@@ -25,20 +25,74 @@ header.flex .logo:hover{
     transform: scale(1.04);
 }
 main article.product-details{
+    background-color: var(--white);
     margin-inline: auto;
     max-width: 800px;
-    
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    border-radius: 5px;
+    border-top-left-radius: 150px;
 }
 main article.product-details img{
     width: 40%;
+    border-radius: 150px 0 150px 5px;
+    border-right: 1px solid rgb(197, 191, 191);
 }
 main .card-content{
     margin-inline:  1.1rem;
 }
 main .card-content .description{
-    margin-block: 1.2rem;
+    text-align: left;
+    margin-block: 3.4rem;
     line-height: 1.44rem;
     font-size: .96rem;
+}
+@media (max-width: 850px){
+    main .card-content .description{
+        margin-block: 1.5rem;
+        
+    }
+    main article.product-details img{
+        border-right: 1px solid rgb(197, 191, 191);
+    }
+}
+@media (max-width: 730px){
+
+    main article.flex{
+        margin-top: 8%;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+    main article.product-details{
+        border-top-left-radius: 0;
+    }
+    main article.product-details img{
+        border-radius: 5px 5px 0 0;
+        width: 260px; 
+        border-right: none;
+    }
+        
+    
+    main .card-content .description{
+        margin-block: 1rem;
+        
+        
+    }
+    main article .card-content {
+        margin-top: 1.25rem;
+        border-top: 1px solid rgb(230, 221, 221);
+        margin-bottom: 1.4rem;
+    }
+    article.product-details .card-content .title{
+        margin-top: 1.25rem;
+    }
+}
+@media (max-width: 370px){
+    main article.product-details img{
+        width: 160px;    }
+        article.product-details .card-content .title h2{
+            font-size: 1.1rem;
+        }
 }
 main .card-content .title .price{
     font-size: 1.22rem;
